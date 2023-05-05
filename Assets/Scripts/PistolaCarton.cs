@@ -13,7 +13,7 @@ public float attractionForce = 10f;
     void Update () {
         if (Input.GetButtonDown("Fire1")) {
             RaycastHit hit;
-            if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range) && hit.collider.gameObject.name != "Terrain") {
+            if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range) && hit.collider.gameObject.name.Contains("Carton")) {
 
                 Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
                 if (rb != null ) {

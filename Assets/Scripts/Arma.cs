@@ -68,6 +68,7 @@ public float attractionForce = 10f;
                 }*/
 
                 Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
+                Debug.Log(rb);
                 if (rb != null ) {
                    Vector3 direction = transform.position - hit.point;
                 // Se aplica una fuerza de atracción al objeto en la dirección calculada
@@ -75,7 +76,7 @@ public float attractionForce = 10f;
                    // rb.velocity = Vector3.zero;
                     //rb.AddForce(transform.forward * absorptionForce, ForceMode.Impulse);
                 
-                    if (Vector3.Distance(rb.transform.position, FPCamera.transform.position) <= 2f) {
+                    if (Vector3.Distance( FPCamera.transform.position, rb.transform.position) <= 1f) {
                     // Se destruye el objeto
                         Destroy(rb.gameObject);
                     }
