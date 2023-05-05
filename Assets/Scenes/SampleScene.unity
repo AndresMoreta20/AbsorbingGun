@@ -1764,6 +1764,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449480759}
+  - component: {fileID: 1449480760}
   m_Layer: 0
   m_Name: armas
   m_TagString: Untagged
@@ -1789,6 +1790,19 @@ Transform:
   m_Father: {fileID: 1474290026}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1449480760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449480758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49f2504187b57a4ab0645f62ab53291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armaActual: 2
 --- !u!4 &1474290026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4490257326247362, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
@@ -2498,7 +2512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7439247930201686356, guid: a37869ce5f690a04ca23238e19cc4a11, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7815526834938518510, guid: a37869ce5f690a04ca23238e19cc4a11, type: 3}
       propertyPath: m_RootOrder
