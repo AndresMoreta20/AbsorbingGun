@@ -6,7 +6,6 @@ public class PistolaPlastico : MonoBehaviour {
 
 [SerializeField] Camera FPCamera;
 [SerializeField] float range = 200f;
-public float absorptionForce = 10f;
 public float attractionForce = 10f; 
 
 

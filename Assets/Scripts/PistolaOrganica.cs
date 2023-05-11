@@ -6,9 +6,8 @@ public class PistolaOrganica : MonoBehaviour {
 
 [SerializeField] Camera FPCamera;
 [SerializeField] float range = 200f;
-public float absorptionForce = 10f;
 public float attractionForce = 10f; 
-// public float range = 100f;
+
 
     void Update () {
         if (Input.GetButtonDown("Fire1")) {

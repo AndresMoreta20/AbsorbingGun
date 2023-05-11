@@ -3,7 +3,9 @@ guid: 550e7c179e5ffc5499f7e6d2755eb1fb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - controller: {instanceID: 0}
+  - FPCamera: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
